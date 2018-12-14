@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hepp</title>
+</head>
+<body>
+	<h1>It works!</h1>
+	<h2 id="paragraph">Number: </h2>
+
+		<script type="text/javascript">
+		let number = new Intl.NumberFormat('da-DK', { style: 'currency', currency: 'DKK' }).format(12345.67); 
+		console.log(number);
+		document.getElementById('paragraph').innerHTML = 'Number: ' + number;
+	</script>
+</body>
+</html>
